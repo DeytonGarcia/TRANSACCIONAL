@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Delivery</title>
+    <link rel="stylesheet" href="FORMULARIO.CSS">
+      <!-- SweetAlert CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <!-- Formulario de Delivery -->
+        <div class="form-section">
+            <h2>Formulario de Delivery</h2>
+            <form action="#" method="post" class="delivery-form">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="direccion">Dirección de Entrega:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="fecha">Fecha de Entrega:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de Entrega:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Imagen a la derecha -->
+        <div class="image-section">
+            <img src="https://i.pinimg.com/236x/e1/87/95/e18795c2ec7a12beb98e141e576afdd3.jpg" alt="Delivery Image" class="delivery-image">
+        </div>
+    </div>
+    
+   
+
+</html>

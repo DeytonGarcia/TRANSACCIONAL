@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #07043a;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ffab40;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffab40;
+}
+
+/* Estilo para la imagen principal */
+.main-image {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.centered-image {
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Estilo del botón animado */
+.animated-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color:  #07043a;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 2s;
+}
+
+.animated-button:hover {
+    background-color: #d84315;
+    transform: scale(1.1);
+}
+
+/* Contenedor del botón */
+.button-container {
+    text-align: center;
+    margin-top: -40px;
+}
